@@ -78,6 +78,7 @@ input,textarea,select{
 
 /* button styles*/
 .btn {
+	display: inline-block;
 	padding: 20px;
 	font-size: 15px;
 	background: #26a6d1;
@@ -140,3 +141,28 @@ a:hover{
 
 
  /*header*/
+/*service*/
+.service{
+	background: linear-gradient(90deg, #e2f8ff 50%, #f5f9eb 50%);
+}
+.service__left{
+	padding: 45px 60px 45px 180px;
+	background: url(../images/icon_properties.png) no-repeat left center;
+}
+
+.service__right{
+	padding: 45px 0 45px 240px;
+	background: url(../images/icon_wallet.png) no-repeat 15% center;
+}
+.service-title{
+	font-family: montserrat, sans-serif;
+	font-size: 23.2px;
+	margin-bottom: 30px;
+}
+.service-text{
+	font-family: opensans, sans-serif;
+	font-size: 17.2px;
+	margin-bottom: 30px;
+	line-height: 26px;
+}
+/* /service*/

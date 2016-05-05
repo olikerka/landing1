@@ -1,0 +1,80 @@
+header__top
+	(header__item) logo
+	header__item main-menu
+	(header__item)btn_login
+
+content
+	section slider
+		
+			page$
+				slider-content 
+					slider-text
+					button
+						btn btn_big
+			page$	...
+			page$	...
+			page$	...
+			page$	...
+
+	section promo-info 
+		promotion__title
+		promotion__text
+		promotion__text
+
+	section preference
+		preference-menu
+			preference__name
+				preference__number
+				preference__title
+		preference-menu ...
+		preference-menu ...
+
+		preference-item
+			preference-description preference-description_first
+				description__title
+				description__text
+		preference-item ...
+		preference-item ...
+				
+	section service *
+		col col_50pct
+			invitation invitation_first
+				invitation__title
+				invitation__text
+				button
+					btn		
+		col col_50pct ...						
+
+	section	catalog *
+		catalog-info *
+			info__title
+			info__description
+			button 
+				btn
+		col col_33pct
+			product *
+			product__img
+			product__description
+				description__name
+				description__text
+				progress-bar
+					progress-panel
+					progress-info
+						pct
+						days
+		col col_33pct ...
+		col col_33pct ...		
+
+
+	section reviews
+		reviews__info
+			review___title
+			review___description
+		review-item
+		review-author
+		
+
+
+footer
+	footer__partners
+	footer__copyright		
