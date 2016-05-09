@@ -92,7 +92,7 @@ input,textarea,select{
 	font-size: 13px;
 	text-transform: uppercase;
 	color: #ffffff;
-	border-radius: 30px;
+	border-radius: 200px;
 }
 
 .btn_lime {
@@ -139,16 +139,30 @@ a:hover{
 .col {
 	float: left;
 }
-.col_50pct {
-	width: 50%;
+
+.col-right{
+	float: right;
 }
+
+
+.col_18pct {
+	width: 18%;
+}
+
 .col_33pct {
 	width: 33.33%;
 	padding: 0 20px;
 }
 
-.col_56pct {
-	width: 56%;
+.col_40pct{
+	width: 40%;
+}
+
+.col_50pct {
+	width: 50%;
+}
+.col_60pct {
+	width: 60%;
 }
  /*/column*/
 
@@ -161,6 +175,7 @@ a:hover{
 	vertical-align: middle;
 }
 
+
 .header__item-logo{
 	position: relative;
 	display: inline-block;
@@ -168,7 +183,7 @@ a:hover{
 	text-transform: uppercase;
 	font-size: 24px;
 	line-height: 0.7;
-	margin: 0 8% 0 55px;
+	margin-left: 55px;
 	vertical-align: bottom;
 
 }
@@ -218,7 +233,11 @@ a:hover{
 
 .wraplogin{
 	float: right;
-	margin-left: 8%;
+}
+
+.header__item-menu{
+	text-align: center;
+	margin: 0 auto;
 }
 
 .header__item-menu a{
@@ -232,9 +251,77 @@ a:hover{
 /*/header*/ 
 
 /*section reviews*/
-.title__reviews{
+.review__title{
 	font-size: 37px;
 	color: #9ec02d;
 	text-align: center;
 	margin-bottom: 50px;
+}
+
+.review__description{
+	font-size: 19px;
+	color: #949494;
+	text-align: center;
+	margin-bottom: 100px;
+	line-height: 2;
+}
+
+
+.wrap-reviews__content{
+	width: 40%;
+	margin: 0 30px;
+}
+
+.review-item{
+	background: #ffffff;
+	border:1px solid black;
+	border-radius: 9px;
+	margin-bottom: 34px;
+	position: relative;
+}
+
+.review-item:after{
+	content: "";
+	position: absolute;
+	left: 20%;
+	bottom: -21px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 20px 23px 0 0px;
+	border-color: #000000 transparent transparent transparent;
+}
+
+.review__title_content{	
+	font-size: 25px;
+	padding: 22px 5px 7px 5px;
+	margin: 0;
+}
+
+.review__description_content{
+	font-size: 13px;
+	margin: 0;
+	padding: 5px 30px 15px 30px; 
+}
+
+.review-author{
+	color:#494949;
+	margin: 5px 17px 5px 13%;
+}
+
+.review-author img{
+	display: inline-block;
+	width:60px;
+	height: 60px;
+	border-radius: 10px;
+	margin-right: 17px;
+}
+
+.review-author p{
+	font-size: 15px;
+	font-weight: bold;
+	display: inline-block;
+	height: 60px;
+	vertical-align: middle;
+	margin-top: 0;
 }
