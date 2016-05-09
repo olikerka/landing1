@@ -251,6 +251,11 @@ a:hover{
 /*/header*/ 
 
 /*section reviews*/
+
+.reviews{
+	background-image: url(../images/bg-1.png);
+	background-position: bottom;
+}
 .review__title{
 	font-size: 37px;
 	color: #9ec02d;
@@ -274,7 +279,6 @@ a:hover{
 
 .review-item{
 	background: #ffffff;
-	border:1px solid black;
 	border-radius: 9px;
 	margin-bottom: 34px;
 	position: relative;
@@ -284,12 +288,12 @@ a:hover{
 	content: "";
 	position: absolute;
 	left: 20%;
-	bottom: -21px;
+	bottom: -20px;
 	width: 0;
 	height: 0;
 	border-style: solid;
 	border-width: 20px 23px 0 0px;
-	border-color: #000000 transparent transparent transparent;
+	border-color: #ffffff transparent transparent transparent;
 }
 
 .review__title_content{	
