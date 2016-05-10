@@ -140,3 +140,68 @@ a:hover{
 
 
  /*header*/
+
+/*preference*/
+
+.preference-menu  {
+	text-align: justify;
+	border-bottom: 1px solid #e6e6e6;
+}
+.preference__name {
+	padding: 32px 20px 32px 5px ;
+}
+.number {
+	color: white;
+	background-color: #5f5f5f;
+	width: 44px;
+	border-radius: 50%;
+	display: inline-block;
+	text-align: center;
+	line-height: 2.4em;
+	font-size: 20px;
+}
+.is_active .preference__name {
+	border-bottom: 1px solid #add136;
+}
+.is_active .number {
+	background-color: #add136;
+}
+.title {
+	font-size: 33px;
+	color: #5f5f5f;
+	vertical-align: middle;
+	padding-left: 30px;
+}
+
+.preference-item {
+	padding: 50px 20px 85px 0;
+}
+.preference-item p {
+	padding: 15px 0;
+}
+.description__title {
+	color: #add136;
+	font-size: 25px;
+	/*text-align: center;*/
+}
+.description__text {
+	font-size: 17px;
+	color: #656565;
+}
+.preference-description {
+	padding-left: 305px;
+	display: none;
+}
+.preference-description_first {
+	background: url("../images/icon_glasses.png") no-repeat 10% center;
+}
+.preference-description_second {
+	background: url("../images/icon_search-glass.png") no-repeat 10% center;
+}
+.preference-description_fhird {
+	background: url("../images/icon_collaborative.png") no-repeat 10% center;
+}
+.preference-description.is_active {
+	display: inline-block;
+}
+
