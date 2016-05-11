@@ -11,9 +11,6 @@ header,nav,section,article,aside,footer,time{
 html{
 	height:100%;
 }
-
-
-
 body{
 	min-height:100%;
 	min-width:1020px;
@@ -143,21 +140,16 @@ a:hover{
 .col-right{
 	float: right;
 }
-
-
 .col_18pct {
 	width: 18%;
 }
-
 .col_33pct {
 	width: 33.33%;
 	padding: 0 20px;
 }
-
 .col_40pct{
 	width: 40%;
 }
-
 .col_50pct {
 	width: 50%;
 }
@@ -170,12 +162,10 @@ a:hover{
  /*header*/
 
 
-.wrap__header{
-	padding: 33px 0 42px 0;
+.header__top{
+	padding: 30px 0 40px 0;
 	vertical-align: middle;
 }
-
-
 .header__item-logo{
 	position: relative;
 	display: inline-block;
@@ -185,10 +175,7 @@ a:hover{
 	line-height: 0.7;
 	margin-left: 55px;
 	vertical-align: bottom;
-
 }
-
-
 .dot-logo {
 	position: absolute;
 	bottom: 22px;
@@ -198,7 +185,6 @@ a:hover{
 	height: 7px;
 	border-radius: 3.5px;
 }
-
 .smalline-logo{
 	position: absolute;
 	bottom: 0;
@@ -208,7 +194,6 @@ a:hover{
 	height: 20px;
 	border-radius: 3.5px;	
 }
-
 .longline-logo{
 	position: absolute;
 	bottom: 0;
@@ -217,9 +202,7 @@ a:hover{
 	width: 7px;
 	height: 36px;
 	border-radius: 3.5px;
-	
 }
-
 .middleline-logo{
 	position: absolute;
 	bottom: 0;
@@ -228,18 +211,14 @@ a:hover{
 	width: 7px;
 	height: 29px;
 	border-radius: 3.5px;
-	
 }
-
 .wraplogin{
 	float: right;
 }
-
 .header__item-menu{
 	text-align: center;
 	margin: 0 auto;
 }
-
 .header__item-menu a{
 	display: block;
 	padding: 0 12px 0 12px;
@@ -247,7 +226,6 @@ a:hover{
 	text-transform: uppercase;
 	font-size: 12px;
 }
-
 /*/header*/ 
 
 /*section reviews*/
