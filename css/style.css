@@ -272,7 +272,7 @@ a:hover{
 }
 .promo-title{
 	font-size: 37px;
-	width: 440px;
+
 	margin: 0 auto;
 	padding: 50px 0;
 	color: #515151;
@@ -281,7 +281,7 @@ a:hover{
 .promo-text p{
 	color: #515151;
 	font-size: 19px;
-	padding: 20px 180px;
+	padding: 20px 40px;
 	line-height: 24px;
 }
 
@@ -349,6 +349,7 @@ a:hover{
 	background-color: #f9f9f9;
 	border: 1px solid #e5e5e5;
 	border-radius: 7px;
+	position: relative;
 }
 .product-img{
 	overflow: hidden;
@@ -356,6 +357,43 @@ a:hover{
 .product-img img{
 	width: 100%;
 	border-radius: 7px 7px 0 0;
+}
+.label_new{
+	position: absolute;
+	top: 0;
+	border-width: 35px;
+	border-style: solid;
+	border-color: #add136 transparent transparent #add136;
+	border-radius: 10px 0 0 0;
+}
+.label_new:before{
+	position: absolute;
+	content: "new";
+	text-transform: uppercase;
+	-moz-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	color: white;
+	top: 50%;
+	margin-top: -20px;
+	left: -30px;
+}
+.price {
+	position: absolute;
+	background: #26a6d1;
+	font-size: 16px;
+	line-height: 2em;
+	width: 140px;
+	border-radius: 10px;
+	top: 32%;
+	right: 5%;
+	text-align: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	color: white;
 }
 .product-info{
 	padding: 25px 20px;
@@ -371,26 +409,60 @@ a:hover{
 	line-height: 24px;
 	margin-bottom: 15px;
 }
-.product-rate{
-	padding-bottom: 15px;
-	border-bottom: 1px solid #d6d6d6;
-	margin-bottom: 20px;
+/*.product-rate{*/
+	/*padding-bottom: 15px;*/
+	/*border-bottom: 1px solid #d6d6d6;*/
+	/*margin-bottom: 20px;*/
+/*}*/
+/*.progress-bar{*/
+	/*height: 15px;*/
+	/*background: linear-gradient(90deg, #add136 20%, #e3e3e3 20%);*/
+	/*margin-bottom: 15px;*/
+	/*border-radius: 10px;*/
+/*}*/
+/*.rate-info{*/
+	/*font-size: 13.2px;*/
+/*}*/
+/*.percents{*/
+	/*float: left;*/
+/*}*/
+/*.days{*/
+	/*float: right;*/
+/*}*/
+
+
+.loading {
+	padding: 25px 0 5px 0;
 }
-.progress-bar{
-	height: 15px;
-	background: linear-gradient(90deg, #add136 20%, #e3e3e3 20%);
-	margin-bottom: 15px;
+.loading__panel {
+	min-height: 15px;
 	border-radius: 10px;
+	background: #e3e3e3;
 }
-.rate-info{
-	font-size: 13.2px;
+.fund {
+	min-height: 15px;
+	border-radius: 10px;
+	background: #add136;
+	margin-top: -15px;
 }
-.percents{
+.fund_10pct{
+	width:10%
+}
+
+.loading__info{
+	padding: 15px 0;
+}
+.pct {
+	text-align: left;
+	display: block;
+	padding-right: 15px;
 	float: left;
 }
 .days{
-	float: right;
+	text-align: right;
+	display: block;
 }
+
 .product-more{
 	position: relative;
 	text-align: right;
@@ -488,5 +560,14 @@ a:hover{
 	height: 60px;
 	vertical-align: middle;
 	margin-top: 0;
+}
+.partners {
+	padding: 25px 0;
+}
+
+.copyright{
+	text-align: center;
+	font-size: 13px;
+	padding: 25px;
 }
 
