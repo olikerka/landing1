@@ -246,11 +246,14 @@ a:hover{
 	background: url(../images/brackets.png) bottom right no-repeat;
 }
 .slider-title{
-	width: 800px;
+	/*width: 800px;*/
 	margin: 0 auto;
 	padding: 40px 0;
 	color: white;
 	font-size: 49px;
+}
+.slider-content small{
+	display: block;
 }
 .slider-btn{
 	font-size: 19px;
