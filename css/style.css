@@ -469,7 +469,7 @@ a:hover{
 .product-more{
 	position: relative;
 	text-align: right;
-	font-family: 'Times New Roman', sans-serif;
+	/*font-family: 'Times New Roman', sans-serif;*/
 	font-size: 13.2px;
 }
 .more-link{
@@ -480,8 +480,9 @@ a:hover{
 	font-size: 0;
 	margin-left: 10px;
 	content: "";
-	border: 10px solid transparent;
-	border-left: 10px solid #c0db65;
+	border-width: 10px 15px;
+	border-style: solid;
+	border-color: transparent transparent transparent #add136;
 }
 /* /catalog*/
 
