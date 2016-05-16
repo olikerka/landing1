@@ -275,7 +275,6 @@ a:hover{
 }
 .promo-title{
 	font-size: 37px;
-
 	margin: 0 auto;
 	padding: 50px 0;
 	color: #515151;
@@ -292,25 +291,28 @@ a:hover{
 .preference-menu  {
 	text-align: justify;
 	border-bottom: 1px solid #e6e6e6;
+
 }
+
 .preference__name {
-	padding: 32px 20px 32px 5px ;
+	padding: 15px 20px 35px 5px ;
 }
 .number {
 	color: white;
 	background-color: #5f5f5f;
-	width: 44px;
+	width: 48px;
 	border-radius: 50%;
 	display: inline-block;
 	text-align: center;
 	line-height: 2.4em;
 	font-size: 20px;
 }
-.number:hover{
-	background-color: #add136;
-}
+
 .preference__name:hover{
 	border-bottom: 1px solid #add136;
+}
+.preference__name:hover .number{
+	background:  #99c50a;
 }
 .is_active .preference__name {
 	border-bottom: 1px solid #add136;
@@ -356,6 +358,8 @@ a:hover{
 .preference-description.is_active {
 	display: inline-block;
 }
+
+
 /*service*/
 .service{
 	background: linear-gradient(90deg, #e2f8ff 50%, #f5f9eb 50%);
@@ -371,20 +375,20 @@ a:hover{
 	background: url(../images/icon_wallet.png) no-repeat 15% center;
 }
 .service-title{
-	font-family: montserrat, sans-serif;
-	font-size: 23.2px;
+	font-family: Montserrat, sans-serif;
+	font-size: 23px;
 	margin-bottom: 30px;
 }
 .service-text{
-	font-family: opensans, sans-serif;
-	font-size: 17.2px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 17px;
 	margin-bottom: 30px;
 	line-height: 26px;
 }
 /* /service*/
 /*catalog*/
 .catalog{
-	margin-bottom: 75px;
+	/*margin-bottom: 75px;*/
 }
 .catalog__top{
 	padding: 0 20px;
@@ -397,33 +401,28 @@ a:hover{
 	right: 20px;
 	margin-top: -30px;
 }
-.catalog-btn .btn{
 
-}
-.catalog-btn{
-
-}
 .catalog-info{
 	width: 65%;
-	font-family: opensans, sans-serif;
+	font-family: 'Open Sans', sans-serif;
 
 }
 .catalog-title{
-	font-size: 29.2px;
+	font-size: 29px;
 	margin-bottom: 25px;
 }
 .catalog-text{
-	font-size: 17.2px;
+	font-size: 17px;
 	line-height: 26px;
 }
 .product-item{
 	background-color: #f9f9f9;
 	border: 1px solid #e5e5e5;
 	border-radius: 7px;
-	position: relative;
 }
 .product-img{
 	overflow: hidden;
+	position: relative;
 }
 .product-img img{
 	width: 100%;
@@ -435,7 +434,7 @@ a:hover{
 	border-width: 35px;
 	border-style: solid;
 	border-color: #add136 transparent transparent #add136;
-	border-radius: 10px 0 0 0;
+	border-radius: 7px 0 0 0;
 }
 .label_new:before{
 	position: absolute;
@@ -457,8 +456,8 @@ a:hover{
 	font-size: 16px;
 	line-height: 2em;
 	width: 140px;
-	border-radius: 10px;
-	top: 32%;
+	border-radius: 7px;
+	bottom: 10%;
 	right: 5%;
 	text-align: center;
 	overflow: hidden;
@@ -468,15 +467,15 @@ a:hover{
 }
 .product-info{
 	padding: 25px 20px;
-	font-family: opensans, sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 .product-title{
-	font-size: 17.2px;
+	font-size: 17px;
 	font-weight: bold;
 	margin-bottom: 15px;
 }
 .product-description{
-	font-size: 13.2px;
+	font-size: 13px;
 	line-height: 24px;
 	margin-bottom: 15px;
 }
@@ -537,11 +536,13 @@ a:hover{
 .product-more{
 	position: relative;
 	text-align: right;
-	/*font-family: 'Times New Roman', sans-serif;*/
-	font-size: 13.2px;
+	border-top: 1px solid #d6d6d6;
+	padding-top: 15px;
 }
 .more-link{
-
+	font-size: 15px;
+	font-weight: 600;
+	opacity: .8;
 }
 .more-link:after{
 	vertical-align: super;
@@ -558,7 +559,10 @@ a:hover{
 
 .reviews{
 	background-image: url(../images/bg-1.png);
-	background-position: bottom;
+	/*background-position: bottom;*/
+	background-size: cover;
+	padding-top: 140px;
+	margin-top: -60px;
 }
 .review__title{
 	font-size: 37px;
