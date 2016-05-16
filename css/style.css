@@ -277,7 +277,16 @@ a:hover{
 	display: inline-block;
 	font-size: 35px;
 }
-
+.slider-btn{
+	font-size: 19px;
+	color: white;
+	margin: 0 auto;
+	background: #99c50a;
+	border-radius: 15px;
+	width: 255px;
+	height: 73px;
+	padding: 22px 0;
+}
 /*.slider-content:after{*/
 	/*content: " ";*/
 	/*position: absolute;*/
@@ -323,17 +332,9 @@ a:hover{
 	filter: alpha(opacity=0);
 	overflow: hidden;
 }
+/* /slider actions */
 
-.slider-btn{
-	font-size: 19px;
-	color: white;
-	margin: 0 auto;
-	background: #99c50a;
-	border-radius: 15px;
-	width: 255px;
-	height: 73px;
-	padding: 22px 0;
-}
+
 /*promo-info*/
 .promo-info{
 	padding: 85px 0;
