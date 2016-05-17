@@ -15,31 +15,28 @@
 		<script src="js/lightslider.js" type="text/javascript"></script>
 		<script src="js/selectivizr.js" type="text/javascript"></script>
 		<script src="js/scr.js" type="text/javascript"></script>
-
-		<!--[if lt IE 9]>
-		<script>
-			document.createElement('header');
-			document.createElement('nav');
-			document.createElement('section');
-			document.createElement('article');
-			document.createElement('aside');
-			document.createElement('footer');
-			document.createElement('time');
-		</script>
-		<script src="js/pie.js" type="text/javascript"></script>
-		<![endif]-->
 	</head>
 	<body>
+	<script type='text/javascript'>
+		$(document).ready(function(){
+			$('.progress').each(function(){
+				var elem = $(this);
+				$('.progress__inner',elem).css({
+					width : elem.data('progress') + '%'
+				});
+			});
+		});
+	</script>
 		<div class="header__top resize clearfix"> <!--header -->
 
-				<a class="header__item-logo col col_18pct clearfix" href="#">
-					<p>crowdme</p>
-					<div class="dot-logo"></div>
-					<div class="smalline-logo"></div>
-					<div class="longline-logo"></div>
-					<div class="middleline-logo"></div>
+				<a class="logo col col_18pct clearfix" href="#">
+					<p class="logo__name">crowdme</p>
+					<div class="logo__dot"></div>
+					<div class="logo__smalline"></div>
+					<div class="logo__longline"></div>
+					<div class="logo__middleline"></div>
 				</a>
-				<ul class="header__item-menu col col_60pct clearfix">
+				<ul class="menu col col_65pct clearfix">
 					<li><a href="#">home</a></li>
 					<li><a href="#">how it works</a></li>
 					<li><a href="#">discover a project</a></li>
@@ -56,9 +53,9 @@
 			<div class="section slider">
 				<ul id="lightSlider"><!--
 					--><li class="page1">
-					<div class="slider-content resize">
-						<div class="slider-text">
-							<span> Intellectual Property has the Shelf Life</span>
+					<div class="slide resize">
+						<div class="slide__text">
+							Intellectual Property has the Shelf Life
 							<small>of a Banana.</small>
 						</div>
 						<div class="button">
@@ -67,8 +64,9 @@
 					</div>
 				</li>
 					<li class="page2">
-						<div class="slider-content resize">
-							<div class="slider-text">Intellectual Property has the Shelf Life
+						<div class="slide resize">
+							<div class="slide__text">
+								Intellectual Property has the Shelf Life
 								<small>of a Banana.</small>
 							</div>
 							<div class="button">
@@ -77,8 +75,9 @@
 						</div>
 					</li>
 					<li class="page3">
-						<div class="slider-content resize">
-							<div class="slider-text"> Intellectual Property has the Shelf Life
+						<div class="slide resize">
+							<div class="slide__text">
+								Intellectual Property has the Shelf Life
 								<small>of a Banana.</small>
 							</div>
 							<div class="button">
@@ -87,8 +86,9 @@
 						</div>
 					</li>
 					<li class="page4">
-						<div class="slider-content resize">
-							<div class="slider-text"> Intellectual Property has the Shelf Life
+						<div class="slide resize">
+							<div class="slide__text">
+								Intellectual Property has the Shelf Life
 								<small>of a Banana.</small>
 							</div>
 							<div class="button">
@@ -97,8 +97,9 @@
 						</div>
 					</li>
 					<li class="page5">
-						<div class="slider-content resize">
-							<div class="slider-text"> Intellectual Property has the Shelf Life
+						<div class="slide resize">
+							<div class="slide__text">
+								Intellectual Property has the Shelf Life
 								<small>of a Banana.</small>
 							</div>
 							<div class="button">
@@ -109,16 +110,16 @@
 				--></ul>
 			</div>
 			<!--section-->
-			<div class="section promo-info">
+			<div class="section promo">
 				<div class="resize clearfix">
-					<div class="promo-img">
+					<div class="promo__img">
 						<img src="images/icon_promo.png" alt="promo">
 					</div>
-					<div class="promo-title">Our work is the presentation of our capabilities.
+					<div class="promo__title">Our work is the presentation of our capabilities.
 					</div>
-					<div class="promo-text">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </p>
-						<p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+					<div>
+						<p class="promo__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </p>
+						<p class="promo__description">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
 					</div>
 				</div>
 			</div>
@@ -126,7 +127,7 @@
 			
 			<!--section-->                                                                                                          
 <div class="section preference resize">                                                                                                                                        
-	<ul class="preference-menu">                                                                                                                                                                                 
+	<ul class="preference__menu">
 		<li class="is_active">                                                                                                                                                                                                      
 			<a href="index.html" class="preference__name">                                                                        
 			<span class="number">1</span>                                                                                         
@@ -147,20 +148,20 @@
 		</li>                                                                                                                                                                                                                          
 		<li class="juster"></li>                                                                                                                                                                                                      
 	</ul>                                                                                                                                                                                                              
-	<div class="preference-item">                                                                                                                                                                                  
-		<div class="is_active preference-description preference-description_first">                                                                                                                                                    
+	<div class="preference__item">
+		<div class="is_active preference__description preference__description_first">
 			<p class="description__title">Browse projects, like booking a hotel online !                                          
 			</p>                                                                                                                    
 			<p class="description__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et do lore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.                                                                                             
 			</p>                                                                                                                                                                                                                                       
 		</div>                                                                                                                                                                                                                         
-		 <div class="preference-description preference-description_second">                                                                                                                                                                
+		 <div class="preference__description preference__description_second">
 		 	<p class="description__title">Transparent!                                                                            
 		 	</p>                                                                                                                  
 		 	<p class="description__text">Praesent erat augue, sollicitudin tristique ornare a, tincidunt in nisl. Nullam in urna diam. Integer purus sem, convallis in augue ac, egestas tincidunt lorem. Aliquam velit nulla, convallis vel dictum vitae, dignissim sit amet metus. Vestibulum accumsan purus vitae leo faucibus condimentum. Curabitur pretium volutpat lorem, vel volutpat ipsum tempor sit amet. Proin tincidunt mattis magna malesuada consectetur. Nullam convallis, mi sed lobortis consequat, dolor metus semper sem, nec vehicula nisl lectus nec metus.           
 		 	</p>                                                                                                            
 		 </div>                                                                                                                                                                                                                       
-		<div class="preference-description preference-description_fhird">                                                                            
+		<div class="preference__description preference__description_fhird">
 			<p class="description__title">Collaborative!</p>
 			<p class="description__text">In hac habitasse platea dictumst. Morbi imperdiet lobortis justo sit amet ornare. Ut quis enim a augue vestibulum lobortis ac ac sem. Nulla eu massa faucibus, posuere quam at, mattis nisi. Quisque ac diam suscipit, dapibus libero eu, fermentum enim. Sed gravida nulla at aliquam luctus. Sed non tellus aliquam, accumsan ligula a, placerat eros. In consectetur scelerisque hendrerit. Etiam ultrices laoreet pharetra. Nulla ultrices lacus ex, nec elementum justo consequat luctus. Nunc in nisl lorem. Donec blandit laoreet odio, vel feugiat velit vulputate et. Maecenas efficitur sem eros, non commodo nulla placerat vel. Aliquam diam ante, vulputate a aliquam at, dictum sit amet leo.
 			</p>                                                                                                                  
@@ -225,12 +226,12 @@
 									<p class="product-description">
 										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 									</p>
-									<div class="loading">
-										<div class="loading__panel">
-											<div class="fund" style='width: 10%'></div>
+									<div class="progress-bar">
+										<div data-progress="10" class="progress">
+											<div class="progress__inner"></div>
 										</div>
 
-										<div class="loading__info clearfix">
+										<div class="progress-info clearfix">
 											<span class="pct">10% Funded</span>
 											<span class="days">8 Days Left</span>
 										</div>
@@ -256,12 +257,12 @@
 									<p class="product-description">
 										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 									</p>
-									<div class="loading">
-										<div class="loading__panel">
-											<div class="fund" style='width: 40%'></div>
+									<div class="progress-bar">
+										<div data-progress="40" class="progress">
+											<div class="progress__inner"></div>
 										</div>
 
-										<div class="loading__info clearfix">
+										<div class="progress-info clearfix">
 											<span class="pct">40% Funded</span>
 											<span class="days">8 Days Left</span>
 										</div>
@@ -287,13 +288,13 @@
 									<p class="product-description">
 										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 									</p>
-									<div class="loading">
-										<div class="loading__panel">
-											<div class="fund" style='width: 60%'></div>
+									<div class="progress-bar">
+										<div data-progress="80" class="progress">
+											<div class="progress__inner"></div>
 										</div>
 
-										<div class="loading__info clearfix">
-											<span class="pct">60% Funded</span>
+										<div class="progress-info clearfix">
+											<span class="pct">80% Funded</span>
 											<span class="days">8 Days Left</span>
 										</div>
 									</div>
@@ -306,49 +307,50 @@
 						</div>
 					</div>
 				</div>	
-			</div>
-			<!--section  reviews-->
-			<div class="reviews">
-				<div class="resize">
-				<div class="reviews__info">
-					<div class="review__title">
-						<p>Be Part of a Growing International Community</p>	
-					</div>
-					<div class="review__description">
-						<p>One of the challenges in networking is everybody thinks it's making cold calls to strangers. Actually, it's the people who already have strong trust relationships with you</p>
-					</div>
-				</div>
-				<div class="reviews__content clearfix">
-				    <div class="wrap-reviews__content col">
-						<div class="review-item">
-							<div class="review__title review__title_content">
-								<p>One of the Best</p>	
-							</div>
-							<div class="review__description review__description_content">
-								<p>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod taempor incididunt ut labore et dolore magna aliqua.</p>
-							</div>
-						</div>
-						<div class="review-author">
-							<img src="images/review-author1.png">
-							<p>David Beckham</p>
-						</div>
-					</div>
 
-					<div class="wrap-reviews__content col-right">
-						<div class="review-item">
-							<div class="review__title review__title_content">
-								<p>Exellent Service</p>	
-							</div>
-							<div class="review__description review__description_content">
-								<p>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod taempor incididunt ut labore et dolore magna aliqua.</p>
-							</div>
+				<!--section  reviews-->
+				<div class="reviews">
+					<div class="resize">
+					<div class="reviews__info">
+						<div class="review__title">
+							<p>Be Part of a Growing International Community</p>
 						</div>
-						<div class="review-author">
-							<img src="images/review-author2.png">
-							<p>David Beckham</p>
+						<div class="review__description">
+							<p>One of the challenges in networking is everybody thinks it's making cold calls to strangers. Actually, it's the people who already have strong trust relationships with you</p>
 						</div>
 					</div>
+					<div class="reviews__content clearfix">
+						<div class="wrap-reviews__content col">
+							<div class="review-item">
+								<div class="review__title review__title_content">
+									<p>One of the Best</p>
+								</div>
+								<div class="review__description review__description_content">
+									<p>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod taempor incididunt ut labore et dolore magna aliqua.</p>
+								</div>
+							</div>
+							<div class="review-author">
+								<img src="images/review-author1.png">
+								<p>David Beckham</p>
+							</div>
+						</div>
 
+						<div class="wrap-reviews__content col-right">
+							<div class="review-item">
+								<div class="review__title review__title_content">
+									<p>Exellent Service</p>
+								</div>
+								<div class="review__description review__description_content">
+									<p>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod taempor incididunt ut labore et dolore magna aliqua.</p>
+								</div>
+							</div>
+							<div class="review-author">
+								<img src="images/review-author2.png">
+								<p>David Beckham</p>
+							</div>
+						</div>
+
+					</div>
 				</div>
 			</div>
 		</div>
